@@ -1,0 +1,30 @@
+---
+title: 'Sep 22 Synchronous Session'
+author: 'Data Science for Biomedical Informatics (BMIN503/EPID600)'
+output: 
+  html_document:
+    theme: cerulean
+    highlight: pygments
+---
+
+***
+
+### COVID in Philadelphia
+
+1. Load data frames called `covid.jul` and `covid.aug` corresponding to covid test results reported by the Philadelphia Department of Public Health on July 7 and August 11, 2020 that are in files `phl_covid_tests_7.7.20.txt` and `phl_covid_tests_8.11.20.txt`, respectively. Additionally, load data frames for death rates reported in each month that are in files `phl_covid_deaths_7.7.20.txt` and `phl_covid_deaths_8.11.20.txt` 
+
+```{r, eval = TRUE}
+```
+
+2. Create one data frame called `covid.july.counts` that contains columns: zip_codes, positive tests per zip code, negative tests per zip code, deaths per zip code. Break this task down into as many steps as you see fit to make sure the final data frame contains all data available. 
+```{r, eval = TRUE}
+```
+
+3. Create a column for the total number of tests and one for the positivity rate (positive tests)/(all tests). By July 7, which zip code had the greatest number of tests, the greatest positivity, the greatest number of deaths? Note that zip codes without reported counts contained counts of 6 or less. Let's assume that zip codes with unreported counts had zero positives, negatives or deaths, as needed. Use the `replace` function to make that change before creating the new columns.
+```{r, eval = TRUE}
+
+```
+
+4. If you were to repeat all of these steps for August, what would you do? 
+
+***
